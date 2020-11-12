@@ -17,7 +17,9 @@ public class Console {
         this.petAmount = amt;
     }
     public void getPetKind(){
+
         Scanner petKind = new Scanner(System.in);
         System.out.println("What kind of pets do you have?");
+
     }
 }
