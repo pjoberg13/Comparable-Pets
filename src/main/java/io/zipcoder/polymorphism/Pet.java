@@ -3,20 +3,10 @@ package io.zipcoder.polymorphism;
 import java.util.ArrayList;
 
 public class Pet {
-<<<<<<< HEAD
+
     private String name;
     private String animalType;
-    private ArrayList<String> petList = new ArrayList<String>();
-=======
-
-    private String name;
-
-
-
-
-    String name;
-    String animalType;
->>>>>>> 81ca81d50ab389cd197ac61c5708902fee6b4eae
+    private ArrayList<Pet> petList = new ArrayList<Pet>();
 
     Pet(String name, String animalType) {
         this.name = name;

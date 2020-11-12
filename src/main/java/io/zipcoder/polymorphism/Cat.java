@@ -3,13 +3,10 @@ package io.zipcoder.polymorphism;
 public class Cat extends Pet {
 
     public Cat(String name, String animalType) {
-        super(name, animalType);
+        super(name, "cat");
     }
 
-<<<<<<< HEAD
     public String speak() {
-        return "woof";
+        return "meow";
     }
-=======
->>>>>>> 81ca81d50ab389cd197ac61c5708902fee6b4eae
 }
