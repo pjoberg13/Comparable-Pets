@@ -4,22 +4,22 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CatTest {
+public class BirdTest {
 
     @Test
-    public void speakTest() {
-        Cat snaps = new Cat("Snaps", "cat");
-        String actual = snaps.speak();
-        String expected = "meow";
+    public void speak() {
+        Bird polly = new Bird("polly", "bird");
+        String expected = "squak";
+        String actual = polly.speak();
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void constructorTest() {
-        Cat snaps = new Cat("Snaps", "cat");
-        boolean actual = snaps instanceof Pet;
+        Bird polly = new Bird("polly", "bird");
         boolean expected = true;
+        boolean actual = polly instanceof Pet;
 
         assertEquals(expected, actual);
     }
