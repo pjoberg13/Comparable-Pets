@@ -28,32 +28,40 @@ public class Console {
             Integer selection = petSelect.nextInt();
             switch (selection) {
                 case 1:
-                    Scanner dogName = new Scanner(System.in);
-                    System.out.println("What is your dogs name?");
-                    String name = dogName.nextLine();
-                    Dog dog = new Dog(name, "dog");
-                    petlist.add(dog);
+                    dogAdd();
                     i++;
                     break;
                 case 2:
-                    Scanner catName = new Scanner(System.in);
-                    System.out.println("What is your cats name?");
-                    String nameC = catName.nextLine();
-                    Cat cat = new Cat(nameC, "cat");
-                    petlist.add(cat);
+                    catAdd();
                     i++;
                     break;
                 case 3:
-                    Scanner birdName = new Scanner(System.in);
-                    System.out.println("What is your birds name?");
-                    String nameB = birdName.nextLine();
-                    Bird bird = new Bird(nameB, "bird");
-                    petlist.add(bird);
+                    birdAdd();
                     i++;
                     break;
-
             }
-
         }
+    }
+
+    public void dogAdd(){
+        Scanner dogName = new Scanner(System.in);
+        System.out.println("What is your dogs name?");
+        String name = dogName.nextLine();
+        Dog dog = new Dog(name, "dog");
+        petlist.add(dog);
+    }
+    public void catAdd(){
+        Scanner catName = new Scanner(System.in);
+        System.out.println("What is your cats name?");
+        String nameC = catName.nextLine();
+        Cat cat = new Cat(nameC, "cat");
+        petlist.add(cat);
+    }
+    public void birdAdd(){
+        Scanner birdName = new Scanner(System.in);
+        System.out.println("What is your birds name?");
+        String nameB = birdName.nextLine();
+        Bird bird = new Bird(nameB, "bird");
+        petlist.add(bird);
     }
 }
