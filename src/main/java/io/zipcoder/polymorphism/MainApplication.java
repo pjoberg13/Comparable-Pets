@@ -7,5 +7,6 @@ public class MainApplication {
         Console console = new Console();
         console.getPetAmount();
         console.makePetList();
+        console.printNameAndTalk();
     }
 }

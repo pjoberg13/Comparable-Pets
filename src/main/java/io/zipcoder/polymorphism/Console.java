@@ -39,8 +39,21 @@ public class Console {
                     birdAdd();
                     i++;
                     break;
+                default:
+                    System.out.println("Incorrect input");
+                    break;
             }
         }
+    }
+
+    public void printNameAndTalk(){
+        StringBuilder petPrinter = new StringBuilder();
+        for(Pet p:this.petlist){
+            petPrinter.append(p.getName() + ": ");
+            petPrinter.append(p.speak()+"\n");
+        }
+        String petList = petPrinter.toString();
+        System.out.println(petList);
     }
 
     public void dogAdd(){

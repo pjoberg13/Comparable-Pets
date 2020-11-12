@@ -21,4 +21,8 @@ public class Pet {
         this.name = name;
     }
 
+    public String speak(){
+        return this.speak();
+    }
+
 }
