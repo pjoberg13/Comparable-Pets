@@ -6,9 +6,7 @@ public class Pet {
 
     private String name;
     private String animalType;
-    private ArrayList<String> petList = new ArrayList<String>();
-
-
+    private ArrayList<Pet> petList = new ArrayList<Pet>();
 
     Pet(String name, String animalType) {
         this.name = name;
