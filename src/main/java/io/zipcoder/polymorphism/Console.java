@@ -16,7 +16,7 @@ public class Console {
         Integer amt = petAmt.nextInt();
         this.petAmount = amt;
     }
-    public void getPetNames(){
+    public void getPetKind(){
         Scanner petKind = new Scanner(System.in);
         System.out.println("What kind of pets do you have?");
     }
