@@ -6,10 +6,10 @@ public class Cat extends Pet {
         super(name, animalType);
     }
 
-<<<<<<< HEAD
+
     public String speak() {
         return "woof";
     }
-=======
->>>>>>> 81ca81d50ab389cd197ac61c5708902fee6b4eae
+
+
 }
