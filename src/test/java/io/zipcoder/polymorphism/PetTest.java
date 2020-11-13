@@ -33,14 +33,29 @@ public class PetTest {
     public void compareToTest(){
         Bird crackers = new Bird("crackers","bird");
         Bird polly = new Bird("polly","bird");
+        Dog doggo = new Dog("doggo","dog");
         ArrayList<Pet> actual = new ArrayList<Pet>();
         actual.add(polly);
         actual.add(crackers);
+        actual.add(doggo);
         Collections.sort(actual);
-        Pet [] birds = {crackers,polly};
+        Pet [] birds = {crackers,doggo,polly};
         ArrayList<Pet> expected = new ArrayList<Pet>(Arrays.asList(birds));
 
         assertTrue(String.valueOf(expected.containsAll(actual)),actual.containsAll(expected));
-
+    }
+    @Test
+    public void comparatorTest(){
+        Cat crackers = new Cat("crackers","cat");
+        Bird polly = new Bird("polly","bird");
+        Dog doggo = new Dog("doggo","dog");
+        ArrayList<Pet> actual = new ArrayList<Pet>();
+        actual.add(polly);
+        actual.add(crackers);
+        actual.add(doggo);
+        Collections.sort(actual,new PetComparator());
+        Pet [] birds = {polly,crackers,doggo};
+        ArrayList<Pet> expected = new ArrayList<Pet>(Arrays.asList(birds));
+        assertTrue(String.valueOf(expected.containsAll(actual)),actual.containsAll(expected));
     }
 }

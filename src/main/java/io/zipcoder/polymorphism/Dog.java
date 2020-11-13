@@ -19,4 +19,8 @@ public class Dog extends Pet{
     public int compareTo(Pet o) {
         return 0;
     }
+    @Override
+    public String toString(){
+        return "dog";
+    }
 }

@@ -16,4 +16,8 @@ public class Cat extends Pet {
     public int compareTo(Pet a,Pet b) {
         return a.getName().compareTo(b.getName());
     }
+    @Override
+    public String toString(){
+        return "cat";
+    }
 }

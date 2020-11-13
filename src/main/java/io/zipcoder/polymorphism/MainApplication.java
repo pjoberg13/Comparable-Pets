@@ -8,5 +8,7 @@ public class MainApplication {
         console.getPetAmount();
         console.makePetList();
         console.printNameAndTalk();
+        console.orderByName();
+        console.orderByType();
     }
 }
