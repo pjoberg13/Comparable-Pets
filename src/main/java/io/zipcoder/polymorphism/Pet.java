@@ -2,7 +2,7 @@ package io.zipcoder.polymorphism;
 
 import java.util.ArrayList;
 
-public class Pet {
+public abstract class Pet implements Comparable<Pet> {
 
     private String name;
     private String animalType;
@@ -25,4 +25,7 @@ public class Pet {
         return this.speak();
     }
 
+    public int compareTo(Pet a,Pet b) {
+        return a.getName().compareTo(b.getName());
+    }
 }

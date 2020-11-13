@@ -11,4 +11,12 @@ public class Dog extends Pet{
     public String speak() {
         return "bark";
     }
+
+    public int compareTo(Pet a,Pet b) {
+        return a.getName().compareTo(b.getName());
+    }
+
+    public int compareTo(Pet o) {
+        return 0;
+    }
 }

@@ -9,4 +9,11 @@ public class Cat extends Pet {
     public String speak() {
         return "meow";
     }
+
+    public int compareTo(Pet o) {
+        return 0;
+    }
+    public int compareTo(Pet a,Pet b) {
+        return a.getName().compareTo(b.getName());
+    }
 }
