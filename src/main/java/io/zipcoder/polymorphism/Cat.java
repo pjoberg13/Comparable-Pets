@@ -10,12 +10,7 @@ public class Cat extends Pet {
         return "meow";
     }
 
-    public int compareTo(Pet o) {
-        return 0;
-    }
-    public int compareTo(Pet a,Pet b) {
-        return a.getName().compareTo(b.getName());
-    }
+
     @Override
     public String toString(){
         return "cat";

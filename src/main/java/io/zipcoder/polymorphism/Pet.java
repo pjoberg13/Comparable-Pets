@@ -25,7 +25,9 @@ public abstract class Pet implements Comparable<Pet> {
         return this.speak();
     }
 
-    public int compareTo(Pet a,Pet b) {
-        return a.getName().compareTo(b.getName());
+    public int compareTo(Pet o){
+        int nameDiff = name.compareToIgnoreCase(o.name);
+            return nameDiff;
+
     }
 }

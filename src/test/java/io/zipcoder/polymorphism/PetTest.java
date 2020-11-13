@@ -42,7 +42,7 @@ public class PetTest {
         Pet [] birds = {crackers,doggo,polly};
         ArrayList<Pet> expected = new ArrayList<Pet>(Arrays.asList(birds));
 
-        assertTrue(String.valueOf(expected.containsAll(actual)),actual.containsAll(expected));
+        assertEquals(expected,actual);
     }
     @Test
     public void comparatorTest(){

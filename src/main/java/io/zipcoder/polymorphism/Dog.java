@@ -16,9 +16,7 @@ public class Dog extends Pet{
         return a.getName().compareTo(b.getName());
     }
 
-    public int compareTo(Pet o) {
-        return 0;
-    }
+
     @Override
     public String toString(){
         return "dog";

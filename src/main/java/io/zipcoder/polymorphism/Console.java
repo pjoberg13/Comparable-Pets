@@ -48,22 +48,22 @@ public class Console {
     }
     public void orderByName(){
         StringBuilder petPrinter = new StringBuilder();
-        ArrayList<Pet> sorted = new ArrayList<Pet>();
-        sorted.add(Collections.sort(this.petlist));
-        petPrinter.append("Pets in name order: \n");
+        Collections.sort(this.petlist);
+        petPrinter.append("Pets alphabetically by name: \n");
         for(Pet p:this.petlist){
             petPrinter.append(p.getName() + " ");
         }
+        petPrinter.append("\n");
         System.out.println(petPrinter.toString());
     }
     public void orderByType(){
         StringBuilder petPrinter = new StringBuilder();
         Collections.sort(this.petlist, new PetComparator());
-        petPrinter.append("Pets in type order: \n");
+        petPrinter.append("Pets alphabetically by species: \n");
         for(Pet p:this.petlist){
             petPrinter.append(p.getName() + " ");
         }
-        System.out.println(this.petlist.toString());
+        System.out.println(petPrinter.toString());
     }
 
     public void printNameAndTalk(){
